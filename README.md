@@ -7,7 +7,7 @@ or
 `npm install @spon/domevents --save`
 
 ```javascript
-import domEvents from '@spon/domEvents'
+import domEvents from '@spon/domevents'
 
 const addEvents = domEvents(document.body)
 
