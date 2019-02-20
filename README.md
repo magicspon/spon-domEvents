@@ -9,7 +9,7 @@ or
 ```javascript
 import domEvents from '@spon/domevents'
 
-const addEvents = domEvents(document.body)
+const { addEvents, removeEvents } = domEvents(document.body)
 
 addEvents({
 	'click [data-toggle-button]': (e, elm) => {
