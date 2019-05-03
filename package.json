@@ -1,6 +1,6 @@
 {
 	"name": "@spon/domevents",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "a small wrapper around dom-delegate for backbone object styled events",
 	"keywords": [],
 	"homepage": "https://github.com/magicspon/spon-domEvents#readme",

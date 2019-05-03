@@ -13,7 +13,7 @@ import delegate from 'dom-delegate'
  * @function createStore
  * @return {CreateStoreFactory}
  */
-export const createStore = () => {
+const createStore = () => {
 	const store = {}
 
 	return {
@@ -72,7 +72,8 @@ function domEvents(node = document.body) {
 		const rootNode = withRoot ? delegate(args[0]) : root
 
 		Object.entries(events).forEach(([key, fn]) => {
-			const [event, selector] = key.split(' ')
+			const [event, ...rest] = key.split(' ')
+			const selector = rest.join(' ')
 			const func = typeof fn === 'function' ? fn : fn[0]
 			const capture = typeof fn === 'function' ? false : fn[1]
 
@@ -91,7 +92,7 @@ function domEvents(node = document.body) {
 	function removeEvent(key) {
 		const [event, selector] = key.split(' ')
 		const { func, rootNode, capture } = eventStore.store[key]
-		eventStore.delete[key]
+		eventStore.delete(key)
 
 		rootNode.off(event, selector, func, capture)
 	}

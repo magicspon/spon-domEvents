@@ -30,16 +30,21 @@ describe('test domEvents', () => {
 	it('should attach events', async () => {
 		const container = document.getElementById('test')
 		const node = container.querySelector('[data-testid="button"]')
+		const node2 = container.querySelector('[data-testid="button3"]')
 
 		const { addEvents } = domEvents(container)
 		const onClick1 = jest.fn()
+		const onClick2 = jest.fn()
 
 		addEvents({
-			'click [data-testid="button"]': onClick1
+			'click [data-testid="button"]': onClick1,
+			'click #inner [data-testid="button3"]': onClick2
 		})
 
 		node.click()
+		node2.click()
 		expect(onClick1).toHaveBeenCalledTimes(1)
+		expect(onClick2).toHaveBeenCalledTimes(1)
 	})
 
 	it('should remove events', async () => {
