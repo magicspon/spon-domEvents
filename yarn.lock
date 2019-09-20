@@ -2422,11 +2422,6 @@ doctrine@^2.1.0:
   dependencies:
     esutils "^2.0.2"
 
-dom-delegate@^2.2.0:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/dom-delegate/-/dom-delegate-2.2.1.tgz#18d3a270cbd656176adf0b4509aab7e6686e240d"
-  integrity sha512-ruCEuxytyTJKujwONbQ82V85aFvs3Ob7LeY/o+2BHfHjFi0DfJ8W9tNeak+Ye3qQDutVkAfFKH8GJa/s7dqTKw==
-
 dom-testing-library@^3.16.5:
   version "3.19.4"
   resolved "https://registry.yarnpkg.com/dom-testing-library/-/dom-testing-library-3.19.4.tgz#f5b737f59ee9749a4568fa353f1f59be97c888c3"
@@ -3060,6 +3055,11 @@ fsevents@^1.2.7:
   dependencies:
     nan "^2.12.1"
     node-pre-gyp "^0.12.0"
+
+ftdomdelegate@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/ftdomdelegate/-/ftdomdelegate-3.1.0.tgz#f22a1bb3dba7ed0e239125487923899a16448963"
+  integrity sha512-sEGlE4xTcwl7RxW8ypB2jUbKAWxG4iE7YLmko9AKdGUn2BY1fkg5zeC0Ec9Ac770iDpAqgzXdzO4KrPi3sasug==
 
 function-bind@^1.1.1:
   version "1.1.1"

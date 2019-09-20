@@ -1,6 +1,6 @@
 // @ts-check
 
-import delegate from 'dom-delegate'
+import delegate from 'ftdomdelegate'
 
 /**
  * @typedef {Object} CreateStoreFactory

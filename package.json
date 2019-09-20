@@ -1,6 +1,6 @@
 {
 	"name": "@spon/domevents",
-	"version": "1.0.2",
+	"version": "2.0.0",
 	"description": "a small wrapper around dom-delegate for backbone object styled events",
 	"keywords": [],
 	"homepage": "https://github.com/magicspon/spon-domEvents#readme",
@@ -55,7 +55,8 @@
 		]
 	},
 	"dependencies": {
-		"dom-delegate": "^2.2.0"
+		"dom-delegate": "^2.2.0",
+		"ftdomdelegate": "^3.1.0"
 	},
 	"devDependencies": {
 		"@babel/cli": "^7.0.0-beta.54",
