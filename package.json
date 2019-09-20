@@ -55,7 +55,6 @@
 		]
 	},
 	"dependencies": {
-		"dom-delegate": "^2.2.0",
 		"ftdomdelegate": "^3.1.0"
 	},
 	"devDependencies": {
